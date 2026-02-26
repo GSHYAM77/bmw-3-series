@@ -106,11 +106,17 @@
     if (!navEl) return;
     navEl.innerHTML = "";
 
-    const links = Array.isArray(nav.links) ? ensureHashLinks(nav.links) : [];
-    links.forEach((item) => {
-      navEl.appendChild(el("a", { href: item.href, class: "nav-link" }, [item.label]));
+    const raw = Array.isArray(nav.links) ? nav.links : [];
+    raw.forEach((t) => {
+      const label = (typeof t === "string") ? t : (t.text || t.label || "Link");
+      const href = (typeof t === "string")
+        ? ("#" + String(t).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""))
+        : (t.href || "#");
+
+      navEl.appendChild(el("a", { href: href, class: "nav-link" }, [String(label)]));
     });
   }
+
 
   function renderHero(hero = {}) {
     if ($("heroBadge")) $("heroBadge").textContent = hero.badge || "";
