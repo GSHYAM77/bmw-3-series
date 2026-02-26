@@ -39,33 +39,6 @@
     });
   }
 
-  function renderGallery(gallery) {
-    const host = document.getElementById("gallery");
-    if (!host || !gallery || !Array.isArray(gallery.items)) return;
-
-    const grid = document.createElement("div");
-    grid.className = "grid gallery";
-
-    gallery.items.forEach((it) => {
-      const card = document.createElement("div");
-      card.className = "card";
-      const img = document.createElement("img");
-      img.loading = "lazy";
-      img.src = it.src;
-      img.alt = it.alt || "";
-      img.style.width = "100%";
-      img.style.height = "220px";
-      img.style.objectFit = "cover";
-      img.style.borderRadius = "12px";
-      card.appendChild(img);
-      grid.appendChild(card);
-    });
-
-    host.appendChild(grid);
-  }
-
-
-
 try {
       const data = await loadJson(`/styles/packs/${pack}.json`);
       const vars = (data && data.vars) || {};
