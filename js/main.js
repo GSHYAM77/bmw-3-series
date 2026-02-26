@@ -316,7 +316,7 @@ try {
     const data = await loadJson("/content/site.json");
     await applyStylePack(data.meta || {});
     applyMeta(data.meta || {});
-    applyPageFilter();
+    if (typeof applyPageFilter === 'function') applyPageFilter();
     renderNav(data.nav || {});
     renderHero(data.hero || {});
     renderAbout(data.about || {});
