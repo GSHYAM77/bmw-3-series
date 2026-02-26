@@ -1,66 +1,169 @@
 {
   "meta": {
-    "title": "Campaign \u2014 Services",
-    "description": "Campaign or service landing page",
-    "favicon": "assets/favicon.ico",
+    "title": "BMW 3 Series — The Benchmark Sports Sedan",
+    "description": "Overview, trims, gallery, and FAQs for the BMW 3 Series.",
+    "favicon": "/assets/favicon.ico",
     "brandColor": "#d6b45a",
-    "formspreeId": "",
-    "stylePack": "luxury-blackgold"
+    "stylePack": "luxury-blackgold",
+    "formspreeId": ""
   },
   "nav": {
-    "logo": "CS",
+    "logo": "BMW 3",
     "links": [
-      "About",
-      "Services",
-      "Testimonials",
-      "FAQ",
-      "Contact"
+      { "text": "Overview", "href": "/overview/" },
+      { "text": "Trims", "href": "/trims/" },
+      { "text": "Gallery", "href": "/gallery/" },
+      { "text": "FAQ", "href": "/faq/" },
+      { "text": "Contact", "href": "/contact/" }
     ]
   },
   "hero": {
-    "badge": "Now accepting new clients",
-    "headline": "One page.\nOne goal.\nMore leads.",
-    "subheadline": "High-conversion landing pages for campaigns and launches.",
+    "badge": "Sports Sedan • Premium • Daily-drivable",
+    "headline": "BMW 3 Series\nThe Benchmark\nSports Sedan",
+    "subheadline": "A modern icon: sharp handling, upscale interior, and turbocharged performance—without sacrificing everyday comfort.",
     "stats": [
-      {
-        "value": "2x",
-        "label": "Conversion"
-      },
-      {
-        "value": "Fast",
-        "label": "Turnaround"
-      }
+      { "value": "Sedan", "label": "Body Style" },
+      { "value": "RWD/AWD", "label": "Drivetrain" },
+      { "value": "Turbo", "label": "Power" }
     ],
-    "cta": {
-      "text": "Start now",
-      "href": "#contact"
-    }
+    "cta": { "text": "Explore Trims", "href": "/trims/" },
+    "cta2": { "text": "Find a Dealer", "href": "https://www.bmwusa.com/dealer-locator.html" }
   },
   "about": {
-    "sectionLabel": "About",
-    "heading": "Focused pages that convert.",
+    "sectionLabel": "Overview",
+    "heading": "Why the 3 Series\nstill sets the standard.",
     "paragraphs": [
-      "Short pitch."
+      "The BMW 3 Series balances performance and refinement better than almost any compact luxury sedan. It’s known for steering feel, chassis composure, and strong turbo power across the lineup.",
+      "Whether you want a comfortable commuter, an all-weather sedan with xDrive, or an M Performance upgrade, the 3 Series offers a clean ladder of trims with real differences—not just badges."
+    ],
+    "highlights": [
+      { "label": "Driving feel", "detail": "Balanced chassis, sharp steering, confident braking" },
+      { "label": "Tech + interior", "detail": "Modern infotainment, premium materials, strong ergonomics" },
+      { "label": "Range of trims", "detail": "330i, 330e (PHEV), M340i performance models" }
     ]
   },
   "services": {
-    "sectionLabel": "Services",
-    "heading": "What\u2019s included",
-    "items": []
+    "sectionLabel": "Key Features",
+    "heading": "What people\nactually care about.",
+    "intro": "A quick, buyer-friendly breakdown—no fluff.",
+    "items": [
+      {
+        "title": "Powertrains",
+        "description": "Turbocharged engines across the lineup with smooth 8-speed automatic transmission.",
+        "features": ["330i: efficient + quick", "M340i: serious performance", "330e: plug-in hybrid option"],
+        "bestFor": "Daily drivers and enthusiasts",
+        "turnaround": "N/A"
+      },
+      {
+        "title": "Drivetrain Options",
+        "description": "Rear-wheel drive balance or xDrive all-wheel traction depending on climate and preference.",
+        "features": ["RWD for purists", "xDrive for all-weather confidence", "Stable high-speed feel"],
+        "bestFor": "Snow states or year-round grip",
+        "turnaround": "N/A"
+      },
+      {
+        "title": "Cabin + Tech",
+        "description": "Clean layout, supportive seats, and a modern infotainment experience with driver-assist options.",
+        "features": ["Premium fit/finish", "Comfort + sport seating", "Available driver assistance"],
+        "bestFor": "Commuting + road trips",
+        "turnaround": "N/A"
+      }
+    ],
+    "cta": { "text": "See Trims", "href": "/trims/" }
+  },
+  "projects": {
+    "sectionLabel": "Trims",
+    "heading": "Trim lineup\nat a glance.",
+    "intro": "Simple guide: what each trim is best for.",
+    "items": [
+      {
+        "type": "Core",
+        "year": "Current",
+        "title": "330i",
+        "description": "The sweet spot for value—quick, efficient, and great as a daily luxury sedan.",
+        "role": "Best for: commuting + balanced driving",
+        "tags": ["RWD", "Turbo", "Value"],
+        "url": "/trims/"
+      },
+      {
+        "type": "Core AWD",
+        "year": "Current",
+        "title": "330i xDrive",
+        "description": "All the daily comfort of the 330i with added traction and confidence in bad weather.",
+        "role": "Best for: snow + all-season grip",
+        "tags": ["AWD", "All-weather", "Daily"],
+        "url": "/trims/"
+      },
+      {
+        "type": "Performance",
+        "year": "Current",
+        "title": "M340i",
+        "description": "M Performance step-up—faster, sharper, and more aggressive character.",
+        "role": "Best for: enthusiasts who still daily drive",
+        "tags": ["M Performance", "Fast", "Sport"],
+        "url": "/trims/"
+      },
+      {
+        "type": "Performance AWD",
+        "year": "Current",
+        "title": "M340i xDrive",
+        "description": "Maximum traction + speed. Quick launches, confident grip, still comfortable.",
+        "role": "Best for: performance in all weather",
+        "tags": ["AWD", "Performance", "Grip"],
+        "url": "/trims/"
+      },
+      {
+        "type": "PHEV",
+        "year": "Current",
+        "title": "330e",
+        "description": "Plug-in hybrid option—short electric trips + gas flexibility for longer drives.",
+        "role": "Best for: city driving + efficiency",
+        "tags": ["PHEV", "Efficient", "Tech"],
+        "url": "/trims/"
+      }
+    ]
+  },
+  "gallery": {
+    "sectionLabel": "Gallery",
+    "heading": "BMW 3 Series\nin photos.",
+    "items": [
+      { "src": "https://upload.wikimedia.org/wikipedia/commons/6/6c/2019_BMW_330i_M_Sport_Automatic_2.0.jpg", "alt": "BMW 3 Series front 3/4 view" },
+      { "src": "https://upload.wikimedia.org/wikipedia/commons/7/74/2019_BMW_330i_M_Sport_Automatic_2.0_rear.jpg", "alt": "BMW 3 Series rear view" },
+      { "src": "https://upload.wikimedia.org/wikipedia/commons/1/1e/BMW_G20_IMG_2170.jpg", "alt": "BMW G20 side profile" },
+      { "src": "https://upload.wikimedia.org/wikipedia/commons/3/3b/BMW_330i_G20_Interior.jpg", "alt": "BMW 3 Series interior" },
+      { "src": "https://upload.wikimedia.org/wikipedia/commons/1/1a/BMW_M340i_xDrive_G20_IMG_2938.jpg", "alt": "BMW M340i exterior" },
+      { "src": "https://upload.wikimedia.org/wikipedia/commons/8/8c/BMW_330e_G20_IMG_5429.jpg", "alt": "BMW 330e plug-in hybrid" },
+      { "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/BMW_3_Series_G20_steering_wheel.jpg", "alt": "BMW steering wheel" },
+      { "src": "https://upload.wikimedia.org/wikipedia/commons/5/53/BMW_3_Series_G20_rear_seats.jpg", "alt": "BMW rear seats" }
+    ]
   },
   "testimonials": {
-    "sectionLabel": "Testimonials",
-    "heading": "Results",
-    "items": []
+    "sectionLabel": "Owner Impressions",
+    "heading": "What people\nlike about it.",
+    "items": [
+      { "quote": "Feels sporty without beating you up day to day.", "author": "Driver", "role": "Daily commuter" },
+      { "quote": "The M340i is the ‘do-everything’ trim—fast and still comfortable.", "author": "Enthusiast", "role": "Weekend driver" },
+      { "quote": "xDrive makes it a legit all-season sedan in bad weather.", "author": "Owner", "role": "Snow-state buyer" }
+    ]
   },
   "faq": {
     "sectionLabel": "FAQ",
-    "heading": "Common questions",
-    "items": []
+    "heading": "Buyer questions\nanswered.",
+    "items": [
+      { "question": "Is the BMW 3 Series reliable?", "answer": "Reliability depends heavily on maintenance. A well-maintained 3 Series can be solid, but upkeep costs are typically higher than non-luxury brands." },
+      { "question": "RWD or xDrive?", "answer": "RWD is lighter and more ‘classic BMW’ in feel. xDrive adds traction and confidence in rain/snow—great if you drive year-round in bad weather." },
+      { "question": "Is the M340i worth it?", "answer": "If you want a noticeably faster, sharper driving experience without stepping into a full M car, the M340i is often the sweet spot." },
+      { "question": "What about the 330e plug-in hybrid?", "answer": "Great for short commutes where you can charge at home/work, while still having gas range for longer drives." },
+      { "question": "What should I test on a test drive?", "answer": "Try city + highway, check braking feel, steering response, and comfort over rough pavement. Test infotainment and driver assistance too." },
+      { "question": "Are maintenance costs high?", "answer": "Compared to mainstream cars, yes. Budget for premium tires/brakes and follow scheduled service intervals to avoid bigger repairs." },
+      { "question": "What options matter most?", "answer": "Comfort seats, driver assistance, and the audio system are common ‘worth it’ upgrades—depends on how you drive." },
+      { "question": "Does it hold value?", "answer": "Luxury sedans depreciate, but desirable trims (like M340i) may hold relatively better than base models." }
+    ]
   },
   "contact": {
     "sectionLabel": "Contact",
-    "heading": "Let\u2019s launch",
+    "heading": "Want a spec sheet\nor buying checklist?",
+    "intro": "Drop a message and we’ll send a quick buyer checklist + trim comparison.",
     "email": "info@example.com",
     "formspreeAction": ""
   },
